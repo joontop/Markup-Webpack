@@ -1,0 +1,197 @@
+// 스프라이트 이미지는 공통으로 sp 클래스가 필요
+// ex. <span class="sp sp_space"></span>
+.sp {
+  @include sprite-icon-common; // mixin 에서 계산된 width, height, background-image, background-size 를 가져옴
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+
+  // 혹시나 태그에 텍스트가 있어야할경우 숨김처리
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+// *** 아이콘은 2x, 두배 레티나 아이콘을 사용
+.sp_space {
+  @include sprite-icon-icon($space); // png 아이콘의 파일명을 입력
+}
+
+.sp_arrow_12x12 {
+  @include sprite-icon-icon($arrow_12x12);
+}
+
+.green .sp_arrow_12x12 {
+  @include sprite-icon-icon($arrow_12x12_w);
+}
+
+.sp_arrow_30x30 {
+  @include sprite-icon-icon($arrow_30x30);
+}
+
+.sp_bank_logo {
+  @include sprite-icon-icon($bank_logo);
+}
+
+.green .sp_bank_logo {
+  @include sprite-icon-icon($bank_logo_88x88);
+}
+
+// 체크박스 상테에 따라 이미지 바뀌게 만들기
+.sp_check_circle {
+  @include sprite-icon-icon($check_off_circle);
+}
+.cb:checked + .sp_check_circle {
+  @include sprite-icon-icon($check_on_circle);
+}
+
+.sp_radio_circle {
+  @include sprite-icon-icon($radio_off_circle);
+}
+.rb:checked + .sp_radio_circle {
+  @include sprite-icon-icon($radio_on_circle);
+}
+
+.sp_check {
+  @include sprite-icon-icon($check_off);
+}
+.cb:checked + .sp_check {
+  @include sprite-icon-icon($check_on);
+}
+
+.sp_keypad_arrow_back {
+  @include sprite-icon-icon($keypad_arrow_back);
+}
+
+.green .sp_keypad_arrow_back {
+  @include sprite-icon-icon($keypad_arrow_back_w);
+}
+
+.sp_keypad_character {
+  @include sprite-icon-icon($keypad_character);
+}
+
+.green .sp_keypad_character {
+  @include sprite-icon-icon($keypad_character_w);
+}
+
+.sp_header_back {
+  @include sprite-icon-icon($header_back);
+}
+
+.dark_mode .sp_header_back {
+  @include sprite-icon-icon($header_back_w);
+}
+
+.sp_header_close {
+  @include sprite-icon-icon($header_close);
+}
+
+.sp_header_hamburger {
+  @include sprite-icon-icon($header_hamburger);
+}
+
+.sp_header_info {
+  @include sprite-icon-icon($header_info);
+}
+
+.sp_header_noti {
+  @include sprite-icon-icon($header_noti);
+}
+
+.sp_arrow_7x12 {
+  @include sprite-icon-icon($arrow_7x12);
+}
+
+.sp_arrow_7x10 {
+  @include sprite-icon-icon($arrow_7x10);
+}
+
+.sp_arrow_up_12x7 {
+  @include sprite-icon-icon($arrow_up_12x7);
+}
+
+.sp_menu_bank {
+  @include sprite-icon-icon($menu_bank);
+}
+
+.sp_menu_line_logo {
+  @include sprite-icon-icon($menu_line_logo);
+}
+
+.sp_menu_my_account {
+  @include sprite-icon-icon($menu_my_account);
+}
+
+.sp_star_favorite {
+  @include sprite-icon-icon($star_favorite_off);
+}
+
+.on .sp_star_favorite {
+  @include sprite-icon-icon($star_favorite_on);
+}
+
+.sp_search_glass {
+  @include sprite-icon-icon($search_glass);
+}
+
+.sp_btn_close {
+  @include sprite-icon-icon($btn_close);
+}
+
+.dark_mode .sp_header_close {
+  @include sprite-icon-icon($header_close_w);
+}
+
+.sp_header_setting_w {
+  @include sprite-icon-icon($header_setting_w);
+}
+
+.sp_chk {
+  @include sprite-icon-icon($chk_off);
+}
+
+.on .sp_chk {
+  @include sprite-icon-icon($chk_on);
+}
+
+.sp_btn_dropdown_12x7 {
+  @include sprite-icon-icon($btn_dropdown_12x7);
+}
+
+.sp_btn_dropdown_12x7_gray {
+  @include sprite-icon-icon($btn_dropdown_gray_12x7);
+}
+
+.sp_red_exclamation_mark_14x14 {
+  @include sprite-icon-icon($red_exclamation_mark_14x14);
+  margin-top: 1px;
+  margin-left: 3px;
+}
+
+.sp_pencil_17x17 {
+  @include sprite-icon-icon($pencil_17x17);
+}
+
+.sp_line_bank_bi {
+  @include sprite-icon-icon($line_bank_bi);
+}
+
+.sp_check_white_24x18 {
+  @include sprite-icon-icon($check_white_24x18);
+}
+
+.sp_ic_menu_bills {
+  @include sprite-icon-icon($ic_menu_bills);
+}
+
+.sp_ic_menu_pulsa {
+  @include sprite-icon-icon($ic_menu_pulsa);
+}
+
+.sp_saving_transfer {
+  @include sprite-icon-icon($saving_transfer);
+}

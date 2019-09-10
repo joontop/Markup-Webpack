@@ -1,0 +1,6 @@
+node_modules
+dist
+.idea
+.DS_Store
+src/markup/sprite/spritesmith_generated
+src/markup/sprite/svgstore_generated

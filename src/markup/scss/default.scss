@@ -1,0 +1,90 @@
+html {
+  font-size: 10px;
+}
+
+// 디자인 가이드를 최대한 쉽게 맞추기 위해 기본적으로 가지고 있는 태그들의 margin, padding 을 초기화 합니다.
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+span,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+// font 속성이 상속되지 않는 태그들에 적용합니다.
+// body 에 속성을 넣어서 나열한 태그외에는 상속이 됩니다.
+body,
+button,
+input,
+select,
+table,
+textarea {
+  // ios 버전에 따라 Safrancisco 폰트가 디플트가 아닐수도 있어서 두가지 값을 추가했습니다. (-apple-system, BlinkMacSystemFont)
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  -webkit-text-size-adjust: none; // 뷰포트 변경시 텍스트 변경 없음 설정
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); // 링크 터치시 나타나는 하이라이트 제거
+  -webkit-touch-callout: none; // 화면을 길게 누르고 있을때 뜨는 팝업이나 액션시트를 제어
+  -webkit-user-select: none; // 텍스트나 이미지를 선택할 수 있게 하는 여부를 제어
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+// 리스트 스타일의 기본 블릿을 제거
+ul,
+ol {
+  list-style-type: none;
+}
+
+// 기본 보더가 존재하는 태그들의 보더 제거
+img,
+fieldset {
+  border: 0;
+}
+
+// 이탤릭체가 기본인 태그 스타일 변경
+em,
+address {
+  font-style: normal;
+}
+
+// 링크의 색상을 상속으로 변경하고 하단 언더라인 제거
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// 버튼 태그의 기본 스타일을 제거
+button {
+  -webkit-appearance: none;
+  display: block;
+  background: none;
+  border: 0;
+}
